@@ -13,7 +13,7 @@ Coming soon.
 ```python
 import erebus
 
-# Super cool code.
+proxy_adjusted = erebus.icevol_correction(age, proxy, proxytype='d18o', timeunit='ya')
 ```
 
 ## Installation
