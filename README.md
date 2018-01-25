@@ -2,9 +2,7 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/brews/erebus.svg?branch=master)](https://travis-ci.org/brews/erebus)
 
-Ice-volume correction to marine-isotope proxy records in Python Edit
-Add topics
-
+Ice-volume correction to marine-isotope proxy records in Python.
 
 ## Example
 
