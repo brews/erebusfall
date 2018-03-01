@@ -1,6 +1,6 @@
 # erebusfall
 
-[![Travis-CI Build Status](https://travis-ci.org/brews/erebus.svg?branch=master)](https://travis-ci.org/brews/erebus)
+[![Travis-CI Build Status](https://travis-ci.org/brews/erebusfall.svg?branch=master)](https://travis-ci.org/brews/erebusfall)
 
 Ice-volume correction to marine-isotope 
 [δ18O](https://en.wikipedia.org/wiki/%CE%9418O) and [δD](https://en.wikipedia.org/wiki/Deuterium)
