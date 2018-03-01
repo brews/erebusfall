@@ -7,7 +7,7 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
     benthic_stack=None):
     """Correct isotopic proxy data for ice-volume contribution
 
-    This function uses the LR04 benthic stack scaled such that the LGM-present 
+    This function uses the LR04 benthic stack scaled such that the LGM-present
     change is assumed to be 1 per mil in accordance with the pore-water 
     estimate of Schrag et al., 1996, Science. Adapted from code written by 
     Jess Tierney.
@@ -26,7 +26,7 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
         (thousand years BP), or 'ma' (million years BP). Default is 'ya'.
     benthic_stack: obj, optional
         Benthic stack to use for ice-volume correction. Uses 
-        erebus.benthic_stacks.lr04 by default. This is derived from 
+        erebusfall.benthic_stacks.lr04 by default. This is derived from
         DOI: 10.1594/PANGAEA.701576.
 
     Returns

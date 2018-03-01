@@ -9,4 +9,4 @@ install:
 
 script:
   - python setup.py check -m -r -s
-  - python -m pytest ./erebus/tests
+  - python -m pytest ./erebusfall/tests

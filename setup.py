@@ -12,13 +12,14 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name='erebus',
+    name='erebusfall',
 
     version='0.0.1',
 
     description='Ice-volume correction to marine-isotope proxy records in Python',
 
-    url='https://github.com/brews/erebus',
+    # The project's main homepage.
+    url='https://github.com/brews/erebusfall',
 
     author='S. Brewster Malevich',
     author_email='malevich@email.arizona.edu',
@@ -42,5 +43,5 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs']),
     install_requires=['numpy', 'scipy'],
     tests_require=['pytest'],
-    package_data={'erebus': ['benthic_stacks/*.csv']},
+    package_data={'erebusfall': ['benthic_stacks/*.csv']},
 )
