@@ -12,7 +12,7 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name='erebus',
+    name='erebusfall',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -22,7 +22,7 @@ setup(
     description='Ice-volume correction to marine-isotope proxy records in Python',
 
     # The project's main homepage.
-    url='https://github.com/brews/erebus',
+    url='https://github.com/brews/erebusfall',
 
     # Author details
     author='S. Brewster Malevich',
@@ -56,5 +56,5 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs']),
     install_requires=['numpy', 'scipy'],
     tests_require=['pytest'],
-    package_data={'erebus': ['benthic_stacks/*.csv']},
+    package_data={'erebusfall': ['benthic_stacks/*.csv']},
 )
