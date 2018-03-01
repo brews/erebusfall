@@ -33,7 +33,7 @@ setup(
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -50,7 +50,7 @@ setup(
     ],
 
     # What does your project relate to?
-    keywords='marine isotope paleoclimate proxy',
+    keywords='marine isotope paleoclimate proxy deuterium d18o',
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
     packages=find_packages(exclude=['contrib', 'docs']),
