@@ -4,7 +4,6 @@ See:
 https://packaging.python.org/en/latest/distributing.html
 """
 
-# Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 # To use a consistent encoding
 from os import path
@@ -18,7 +17,6 @@ setup(
 
     description='Ice-volume correction to marine-isotope proxy records in Python',
 
-    # The project's main homepage.
     url='https://github.com/brews/erebusfall',
 
     author='S. Brewster Malevich',
