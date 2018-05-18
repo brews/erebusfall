@@ -4,7 +4,7 @@ from . import benthic_stacks as stacks
 
 
 def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya', 
-    benthic_stack=None):
+                      benthic_stack=None):
     """Correct isotopic proxy data for ice-volume contribution
 
     This function uses the LR04 benthic stack scaled such that the LGM-present
@@ -45,7 +45,7 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
     if benthic_stack is None:
         benthic_stack = stacks.lr04
 
-    sage = benthic_stack.age
+    sage = benthic_stack.age.copy()
     if timeunit == 'ya':
         sage *= 1000
     elif timeunit == 'ma':
@@ -53,7 +53,7 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
 
     # Linearly interpolate the scaled benthic stack to the target data ages.
     interp_f = interp1d(sage, benthic_stack.delo_scaled, kind='linear', 
-        bounds_error=False)
+                        bounds_error=False)
     target = interp_f(age)
 
     # Find any ages that are negative (e.g., post-1950) and turn to 0
@@ -73,4 +73,3 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
     corrected = ((1000 + proxyvalue) / (target / 1000 + 1)) - 1000
 
     return corrected
-    
