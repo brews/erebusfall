@@ -13,7 +13,7 @@ here = path.abspath(path.dirname(__file__))
 setup(
     name='erebusfall',
 
-    version='0.0.1',
+    version='0.0.2',
 
     description='Ice-volume correction to marine-isotope proxy records in Python',
 
