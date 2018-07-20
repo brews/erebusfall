@@ -8,7 +8,10 @@ from setuptools import setup, find_packages
 # To use a consistent encoding
 from os import path
 
-here = path.abspath(path.dirname(__file__))
+def readme():
+    with open('README.md') as f:
+        return f.read()
+
 
 setup(
     name='erebusfall',
@@ -16,6 +19,8 @@ setup(
     version='0.0.2',
 
     description='Ice-volume correction to marine-isotope proxy records in Python',
+    long_description=readme(),
+    long_description_content_type='text/markdown',
 
     url='https://github.com/brews/erebusfall',
 
