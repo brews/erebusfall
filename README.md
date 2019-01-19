@@ -6,8 +6,7 @@ Ice-volume correction to marine-isotope
 [δ18O](https://en.wikipedia.org/wiki/%CE%9418O) and [δD](https://en.wikipedia.org/wiki/Deuterium)
  proxy records, in Python.
 
-`erebusfall` is a simple package for demonstrating how to apply an 
-ice-volume correction to a proxy record. The package uses the [LR04 benthic](https://doi.org/10.1594/PANGAEA.701576) 
+The package uses the [LR04 benthic](https://doi.org/10.1594/PANGAEA.701576) 
 stack. The stack is scaled so that the [LGM](https://en.wikipedia.org/wiki/Last_Glacial_Maximum)-to-present 
 change is assumed to be 1 ‰ in accordance with the pore-water estimate of 
 [Schrag et al. 1996](https://doi.org/10.1126/science.272.5270.1930). The 
