@@ -1,3 +1,7 @@
+## erebusfall v0.0.4
+
+*
+
 ## erebusfall v0.0.3
 
 * Package long description now output to pypi and conda.
