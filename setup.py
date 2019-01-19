@@ -18,7 +18,7 @@ setup(
 
     version='0.0.2',
 
-    description='Ice-volume correction to marine-isotope proxy records in Python',
+    description='Apply a simple ice-volume correction to marine-isotope proxy records in Python',
     long_description=readme(),
     long_description_content_type='text/markdown',
 
