@@ -7,11 +7,11 @@ Ice-volume correction to marine-isotope
  proxy records, in Python.
 
 `erebusfall` is a simple package for demonstrating how to apply an 
-ice-volume correction to a proxy record. The package uses the [LR04 benthic](https://doi.org/10.1594/PANGAEA.701576) 
-stack. The stack is scaled so that the [LGM](https://en.wikipedia.org/wiki/Last_Glacial_Maximum)-to-present 
-change is assumed to be 1 ‰ in accordance with the pore-water estimate of 
+ice-volume correction to a proxy record. The package uses the [LR04](https://doi.org/10.1594/PANGAEA.701576) 
+benthic stack from [Lisiecki and Raymo, 2005](https://doi.org/10.1029/2004PA001071). The stack is scaled so that the [LGM](https://en.wikipedia.org/wiki/Last_Glacial_Maximum)-to-present 
+change is assumed to be 1.0 ‰ in accordance with the pore-water estimate of 
 [Schrag et al. 1996](https://doi.org/10.1126/science.272.5270.1930). The 
-package is adapted from code originally written by Jess Tierney.
+package is adapted from the ice-volume correction in [Tierney et al. 2017](https://doi.org/10.1130/G39457.1).
 
 
 ## Example
@@ -28,7 +28,7 @@ series...
 
 ```python
 age_ka = np.arange(0, 20, 1)
-proxy = np.random.normal(loc=-2.0, size=len(age_kya))
+proxy = np.random.normal(loc=-2.0, size=len(age_ka))
 ```
 
 Now we can plug this into `ef.icevol_correction()` with a few key options:

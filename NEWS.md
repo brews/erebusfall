@@ -2,6 +2,8 @@
 
 * Package long description now output to pypi and conda.
 
+* Beef up docstrings and README. Fix error in README.
+
 
 ## erebusfall v0.0.2
 

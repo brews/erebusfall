@@ -7,10 +7,10 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
                       benthic_stack=None):
     """Correct isotopic proxy data for ice-volume contribution
 
-    This function uses the LR04 benthic stack scaled such that the LGM-present
-    change is assumed to be 1 per mil in accordance with the pore-water 
-    estimate of Schrag et al., 1996, Science. Adapted from code written by 
-    Jess Tierney.
+    This function uses the LR04 benthic stack [1]_ scaled
+    such that the LGM-present change is assumed to be 1.0 ‰ in accordance
+    with the pore-water estimate from [2]_. This correction method
+    is adapted from [3]_.
 
     Parameters
     ----------
@@ -26,12 +26,34 @@ def icevol_correction(age, proxyvalue, proxytype='d18o', timeunit='ya',
         (thousand years BP), or 'ma' (million years BP). Default is 'ya'.
     benthic_stack: obj, optional
         Benthic stack to use for ice-volume correction. Uses 
-        erebusfall.benthic_stacks.lr04 by default. This is derived from
-        DOI: 10.1594/PANGAEA.701576.
+        erebusfall.benthic_stacks.lr04 by default. This is derived from LR04.
 
     Returns
     -------
     A numpy array giving the corrected isotope data.
+
+    References
+    ----------
+    .. [1] Lisiecki, L. E., & Raymo, M. E. (2005). A Pliocene-Pleistocene stack
+       of 57 globally distributed benthic δ18O records: PLIOCENE-PLEISTOCENE
+       BENTHIC STACK. Paleoceanography, 20(1). https://doi.org/10.1029/2004PA001071
+    .. [2] Schrag, D. P., Hampt, G., & Murray, D. W. (1996). Pore Fluid
+       Constraints on the Temperature and Oxygen Isotopic Composition of the
+       Glacial Ocean. Science, 272(5270), 1930–1932. https://doi.org/10.1126/science.272.5270.1930
+    .. [3] Tierney, J. E., deMenocal, P. B., & Zander, P. D. (2017). A climatic
+       context for the out-of-Africa migration. Geology, 45(11), 1023–1026.
+       https://doi.org/10.1130/G39457.1
+
+    Examples
+    --------
+    >>> import erebusfall
+    >>> import numpy as np
+    >>> age_ka = np.arange(0, 20, 1)
+    >>> proxy = np.random.normal(loc=-2.0, size=len(age_ka))
+    >>> proxy_adjusted = erebusfall.icevol_correction(age_ka, proxy,
+    ...                                               proxytype='d18o',
+    ...                                               timeunit='ka')
+
     """
     age = np.array(age)
     proxyvalue = np.array(proxyvalue)
