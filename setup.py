@@ -15,7 +15,7 @@ def readme():
 setup(
     name='erebusfall',
 
-    version='0.0.2',
+    version='0.0.3',
 
     description='Apply a simple ice-volume correction to marine-isotope proxy records in Python',
     long_description=readme(),
