@@ -5,8 +5,7 @@ https://packaging.python.org/en/latest/distributing.html
 """
 
 from setuptools import setup, find_packages
-# To use a consistent encoding
-from os import path
+
 
 def readme():
     with open('README.md') as f:
